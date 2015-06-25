@@ -19,10 +19,7 @@ using Windows.UI.Xaml.Navigation;
 
 namespace FitHubAppUni
 {
-    /// <summary>
-    /// A page that displays an overview of a single group, including a preview of the items
-    /// within the group.
-    /// </summary>
+    //test comment
     public sealed partial class SectionPage : Page
     {
         private NavigationHelper navigationHelper;
