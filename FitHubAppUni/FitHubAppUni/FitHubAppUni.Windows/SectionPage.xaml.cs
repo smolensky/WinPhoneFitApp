@@ -19,7 +19,7 @@ using Windows.UI.Xaml.Navigation;
 
 namespace FitHubAppUni
 {
-    //test comment Maxim
+    //test comment
     public sealed partial class SectionPage : Page
     {
         private NavigationHelper navigationHelper;
