@@ -21,31 +21,25 @@ using FitHubAppUni.Common;
 
 namespace FitHubAppUni
 {
-    /// <summary>
-    /// Provides application-specific behavior to supplement the default Application class.
-    /// </summary>
+    // Provides application-specific behavior to supplement the default Application class.
     public sealed partial class App : Application
     {
 #if WINDOWS_PHONE_APP
         private TransitionCollection transitions;
 #endif
 
-        /// <summary>
-        /// Initializes the singleton instance of the <see cref="App"/> class. This is the first line of authored code
-        /// executed, and as such is the logical equivalent of main() or WinMain().
-        /// </summary>
+        // Initializes the singleton instance of the <see cref="App"/> class. This is the first line of authored code
+        // executed, and as such is the logical equivalent of main() or WinMain().
         public App()
         {
             this.InitializeComponent();
             this.Suspending += this.OnSuspending;
         }
 
-        /// <summary>
-        /// Invoked when the application is launched normally by the end user.  Other entry points
-        /// will be used when the application is launched to open a specific file, to display
-        /// search results, and so forth.
-        /// </summary>
-        /// <param name="e">Details about the launch request and process.</param>
+        // Invoked when the application is launched normally by the end user.  Other entry points
+        // will be used when the application is launched to open a specific file, to display
+        // search results, and so forth.
+        // <param name="e">Details about the launch request and process.</param>
         protected async override void OnLaunched(LaunchActivatedEventArgs e)
         {
 #if DEBUG
